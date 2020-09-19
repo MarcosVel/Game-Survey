@@ -1,5 +1,5 @@
 # SemDevSuperior1
-Semana DevSuperior - plataforma de votação e amostra de dados
+Semana DevSuperior - plataforma de votação (Mobile) e amostra de dados (Web) chamada Big Game Survey
 
 # Visão Geral
 Aplicativo Mobile para votação de games e Aplicativo Web para amostra dos dados

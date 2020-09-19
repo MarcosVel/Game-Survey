@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         fontFamily: "Play_400Regular",
     },
     footer: {
-        marginTop: '15%',
+        marginTop: '10%',
         alignItems: 'center'
     },
     button: {

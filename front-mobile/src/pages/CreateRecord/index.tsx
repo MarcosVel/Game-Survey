@@ -45,7 +45,7 @@ const CreateRecord = () => {
 
         axios.post(`${BASE_URL}/records`, payload)
             .then(() => {
-                Alert.alert('Dados salvos');
+                Alert.alert('Sua votação foi salva!');
                 setName('');
                 setAge('');
                 setSelectedGame('');
@@ -58,7 +58,7 @@ const CreateRecord = () => {
         axios.get(`${BASE_URL}/games`)
             .then(response => {
                 const selectValues = mapSelectValues(response.data);
-                console.log(selectValues);
+                ///console.log(selectValues);
                 setAllGames(selectValues);
             })
             .catch (() => Alert.alert('Erro ao listar os jogos!'));
@@ -112,6 +112,7 @@ const CreateRecord = () => {
                     value={selectedGame}
                     items={filteredGames}
                     style={pickerSelectStyles}
+                    useNativeAndroidPickerStyle={false}
                     Icon={() => {
                         return <Icon name="chevron-down" color="#9E9E9E" size={25} />
                     }}
@@ -135,19 +136,21 @@ const pickerSelectStyles = StyleSheet.create({
         paddingVertical: 12,
         paddingHorizontal: 20,
         backgroundColor: '#FFF',
-        borderRadius: 30,
+        borderRadius: 10,
         color: '#ED7947',
         paddingRight: 30,
         fontFamily: "Play_700Bold",
+        fontWeight: 'normal',
         height: 50
     },
     placeholder: {
         color: '#9E9E9E',
         fontSize: 16,
         fontFamily: "Play_700Bold",
+        fontWeight: 'normal'
     },
     iconContainer: {
-        top: 10,
+        top: 12,
         right: 12,
     }
 })
@@ -166,6 +169,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         color: '#ED7947',
         fontFamily: "Play_700Bold",
+        fontWeight: 'normal',
         fontSize: 16,
         paddingLeft: 20,
         marginBottom: 21
@@ -190,7 +194,7 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         fontFamily: "Play_700Bold",
-        fontWeight: 'bold',
+        fontWeight: 'normal',
         fontSize: 18,
         color: '#0B1F34',
     }

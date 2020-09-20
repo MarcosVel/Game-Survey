@@ -17,3 +17,7 @@ Aplicativo Mobile para votação de games e Aplicativo Web para amostra dos dado
 <img src="https://i.ibb.co/QrXtPgB/front-WEBRecords.png" alt="Page Records">
 
 <img src="https://i.ibb.co/Sszf5C1/front-WEBCharts.png" alt="Page Charts">
+
+## Projeto finalizado - Front Mobile:
+<img src="https://i.ibb.co/pxk4ZYB/front-Mobile-Home.png" alt="Inital Page">
+<img src="https://i.ibb.co/HgGjSgW/front-Mobile-Vote.png" alt="Vote Page">
